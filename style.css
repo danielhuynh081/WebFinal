@@ -1,11 +1,3 @@
-.body {
-  background-image: url("Images/background.jpg"); /* Replace with your image path */
-  background-size: cover; /* Ensures the image covers the whole screen */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents image repetition */
-  background-attachment: fixed; /* Keeps the image fixed while scrolling */
-}
-
 /* Cards Section styling */
 .card {
   background-color: var(--card-background-color);

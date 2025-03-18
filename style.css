@@ -1,0 +1,136 @@
+.body {
+  background-image: url("Images/background.jpg"); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the whole screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  background-attachment: fixed; /* Keeps the image fixed while scrolling */
+}
+
+/* Cards Section styling */
+.card {
+  background-color: var(--card-background-color);
+  border: 1px solid var(--card-border-color);
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  width: 325px;
+  border-radius: 8px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #333;
+}
+
+.card button {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Form Submit button styling */
+.button-submit {
+  background-color: black;
+  color: white;
+  padding: 15px 65px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.button-reset {
+  background-color: white;
+  color: black;
+  padding: 15px 65px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+/*  Hover effects */
+.nav-item:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  /* Form Submit Button */
+  background-color: rgb(96, 2, 96);
+}
+
+button[type="reset"]:hover {
+  /* Form Reset Button */
+  background-color: grey;
+}
+
+.card button:hover {
+  /* Card Button */
+  background-color: darkblue; /* Hover effect on buttons */
+}
+
+.card:hover {
+  /* Hover lift effect for cards */
+  transform: translateY(-10px);
+}
+
+/* Scroll Smoothing */
+html {
+  scroll-behavior: smooth;
+}
+
+.slider-container {
+  position: relative;
+  height: 500px;
+  width: 525px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
